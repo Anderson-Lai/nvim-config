@@ -1,0 +1,34 @@
+{
+  "languageserver": {
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cpp", "h", "cxx", "cc", "hpp", "hh"],
+      "rootPatterns": [".ccls", ".git/"],
+      "initializationOptions": {
+        "cache": {
+          "directory": ".ccls-cache"
+        }
+      }
+    },
+    "rust": {  
+      "command": "rust-analyzer",
+      "filetypes": ["rust"],
+      "rootPatterns": ["Cargo.toml"],
+      "settings": {
+        "rust-analyzer": {
+
+        }
+      }
+    },
+    "typescript": {
+      "command": "typescript-language-server",
+      "args": ["--stdio"],
+      "filetypes": ["typescript", "typescriptreact", "typescript.tsx", "javascript", "javascriptreact", "javascript.jsx"]
+    },
+    "tailwindcss": {
+      "command": "tailwindcss-language-server",
+      "args": ["--stdio"],
+      "filetypes": ["html", "javascript", "javascriptreact", "typescript", "typescriptreact", "css", "scss", "sass"]
+    }
+  }
+}
