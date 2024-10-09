@@ -50,7 +50,7 @@ require'nvim-treesitter.configs'.setup {
 }
 
 -- Set colorscheme
-vim.cmd('colorscheme github_dark_dimmed')
+vim.cmd('colorscheme github_dark')
 -- vim.opt.termguicolors = false
 
 -- Enable syntax highlighting
