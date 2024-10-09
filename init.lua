@@ -14,6 +14,9 @@ Plug 'kyazdani42/nvim-web-devicons' " optional, for file icons
 " Gruvbox theme
 Plug 'morhetz/gruvbox'
 
+" Github theme
+Plug 'projekt0n/github-nvim-theme'
+
 call plug#end()
 ]])
 
@@ -47,8 +50,8 @@ require'nvim-treesitter.configs'.setup {
 }
 
 -- Set colorscheme
-vim.cmd("colorscheme gruvbox")
-vim.opt.termguicolors = false
+vim.cmd('colorscheme github_dark_dimmed')
+-- vim.opt.termguicolors = false
 
 -- Enable syntax highlighting
 vim.cmd("syntax enable")
